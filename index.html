@@ -11,7 +11,29 @@
 		</p>
 		yeheheheheeeeeeesssss css reference work aayiiiiii<br>
 		<link rel="stylesheet" type="text/css" href="test1.css"> </link>
-		<script src="test1.js"></script><br>
 		sadhanam kayyilunddd T_T<br>
+		<div class="rectangle">
+			<label for="length">Length</label>
+			<input type="text" id="length" placeholder="enter length">
+			<br>
+			<label for="breadth">Breadth</label>
+			<input type="text" id="breadth" placeholder="enter breadth">
+			<br>
+			<button class="btn" onclick="rectArea();">Submit</button>
+			<br>
+			<div class="area" id="area">Area = </div>
+		</div>
+		<script>
+			function rectArea(){
+				console.log(document.getElementById("length").value);
+				console.log(document.getElementById("breadth").value);
+    			const a=document.getElementById("length").value;
+			    const b=document.getElementById("breadth").value;
+			    let c="";
+				c=parseInt(a)*parseInt(b);
+				console.log(c);
+			    document.getElementById("area").innerText=`Area = ${c}`;
+			}			
+		</script><br>
 	</body>
 </html>
